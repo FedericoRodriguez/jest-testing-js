@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.hidden {display: none}
+.error {color: red}
+.error-box {border: 1px solid red}
+</style>
+
+<p class="error error-box hidden" id="err">Please fill in the required fields</p>
+<form onsubmit="return validateSubmit(this)" method="post" action="htts://www.google.com">
+  <ul>
+    <li><label id="username-label" for="username">Username</label>
+        <input id="username"></li>
+    <li><label id="password-label" for="password">Password</label>
+        <input id="password"></li>
+  </ul>
+  <button type="submit" id="button">go</button>
+</form>
+<script src="index.js"  type="text/javascript"></script>
+<script src="./_tests_/validation.test.js"  type="text/javascript"></script>
+</html>
+    
+</body>
+</html>
